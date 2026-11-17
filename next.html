@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>NipaPlay Next</title>
-<meta name="description" content="NipaPlay Next：说一句想看什么，梨花替你找片、下载、整理媒体库，资料和弹幕一并补上。所有设备共用一个媒体库。">
+<meta name="description" content="NipaPlay Next：内置 AI 助手「梨花」，通过自然语言完成找片、下载、刮削入库与弹幕匹配，多设备共用同一个媒体库。">
 <meta name="theme-color" content="#000000">
 <link rel="icon" href="/assets/icon.webp" type="image/webp">
 <link rel="preload" href="/next-assets/fonts/nipa-serif.woff2" as="font" type="font/woff2" crossorigin>
@@ -15,7 +15,7 @@
 <header id="nav">
   <div class="nav-in">
     <a class="brand" href="/" aria-label="NipaPlay Next"><img src="/assets/icon.webp" alt=""><span>NipaPlay</span><em>Next</em></a>
-    <nav><a href="#how">工作方式</a><a href="#library">媒体库</a><a href="#devices">设备</a><a href="#arch">架构</a><a href="#home"><span class="lat">Harness</span></a><a href="#open">开放</a></nav>
+    <nav><a href="#how">使用流程</a><a href="#library">媒体库</a><a href="#devices">设备</a><a href="#arch">架构</a><a href="#home"><span class="lat">Harness</span></a><a href="#open">开源与部署</a></nav>
     <a class="nav-get" href="#get">下载</a>
   </div>
 </header>
@@ -26,10 +26,10 @@
   <div class="hero-copy">
     <p class="kicker" data-reveal>开发者预览<span class="sep">·</span><span class="lat">ALPHA 5</span></p>
     <h1 class="letters" aria-label="NipaPlay Next"><span class="w">NipaPlay</span> <span class="w next">Next</span></h1>
-    <p class="lead" data-reveal style="--i:3">说一句想看什么，梨花替你找片、下载、整理媒体库，<br>资料和弹幕一并补上。</p>
+    <p class="lead" data-reveal style="--i:3">在对话框里输入想看的作品，梨花会自动检索资源、下载并整理入库，<br>同时补全元数据与弹幕。</p>
     <div class="cta" data-reveal style="--i:4">
       <a class="btn pink" href="#get">下载 Alpha 5</a>
-      <a class="btn ghost" href="#how">看看怎么用</a>
+      <a class="btn ghost" href="#how">查看工作流程</a>
     </div>
   </div>
   <div class="hero-stage" data-reveal style="--i:5">
@@ -39,7 +39,7 @@
       <div class="app">
         <img class="app-bd" src="/next-assets/bd-gakusei.webp" alt="">
         <div class="app-shade"></div>
-        <div class="app-dm" aria-hidden="true"><span style="--y:14%;--d:0s">第五集来了</span><span style="--y:22%;--d:2.4s" class="p">梨花！</span><span style="--y:9%;--d:4.6s">这季最期待的</span><span style="--y:30%;--d:6.8s" class="y">弹幕也有</span></div>
+        <div class="app-dm" aria-hidden="true"><span style="--y:14%;--d:0s">第五集来了</span><span style="--y:22%;--d:2.4s" class="p">梨花！</span><span style="--y:9%;--d:4.6s">这季最期待的</span><span style="--y:30%;--d:6.8s" class="y">OP 不跳</span></div>
         <div class="app-bar">
           <i class="lights"><b></b><b></b><b></b></i>
           <nav><span class="on">首页</span><span>发现</span><span>媒体库</span><span>动态</span></nav>
@@ -118,16 +118,16 @@
   </div>
 </section>
 
-<!-- 工作方式：三步 -->
+<!-- 使用流程：三步 -->
 <section id="how" class="steps" data-steps="3">
   <div class="stage">
     <div class="step-copy">
-      <p class="kicker">工作方式</p>
-      <h2 class="sec-h">一句话，<br>交给梨花。</h2>
+      <p class="kicker">使用流程</p>
+      <h2 class="sec-h">从自然语言指令<br>到直接播放。</h2>
       <ol class="step-list">
-        <li data-s="0"><span class="num">01</span><h3>你只说想看什么</h3><p>打字或者直接说。不用找资源站，不用记文件名，也不用自己建文件夹。</p></li>
-        <li data-s="1"><span class="num">02</span><h3>梨花去准备</h3><p>找资源、挑版本、下载，认出是哪部作品，补上资料、封面和弹幕。进度在对话里实时更新，关掉窗口也会继续。</p></li>
-        <li data-s="2"><span class="num">03</span><h3>准备好了，就在媒体库里</h3><p>点开就能看。下次想接着看，首页第一排就是它。</p></li>
+        <li data-s="0"><span class="num">01</span><h3>输入观影需求</h3><p>支持文字或语音输入片名、类型或模糊描述，省去手动翻索引站和整理目录的步骤。</p></li>
+        <li data-s="1"><span class="num">02</span><h3>后台自动准备</h3><p>梨花会自动检索片源、筛选版本并下载，识别对应的作品与集数，补全封面、简介和弹幕。任务进度实时同步在对话中，关闭窗口后也会在后台继续运行。</p></li>
+        <li data-s="2"><span class="num">03</span><h3>入库即播</h3><p>处理完成后直接进入媒体库，之后在首页「最近播放」里即可续播。</p></li>
       </ol>
     </div>
     <div class="step-visual">
@@ -159,7 +159,7 @@
             <div class="turn">
               <p class="you-bubble">来点轻松的，一集二十多分钟那种</p>
               <p class="thinking"><i></i><span class="th-w">Thinking</span> <em class="secs">1s</em></p>
-              <p class="reply" data-text="《尼古喵喵》合适：一只整天抽烟的猫的废柴日常，十二集，一集二十四分钟。前三集我先下好，弹幕和资料一起补上。"></p>
+              <p class="reply" data-text="《尼古喵喵》挺合适：讲一只整天抽烟的猫的日常，共 12 集，每集 24 分钟。先帮你下前 3 集，资料和弹幕会一起匹配好。"></p>
               <div class="cards">
                 <div class="workcard"><img src="/next-assets/poster-yani.webp" alt=""><div><b>尼古喵喵</b><span>2026 · 喜剧 · 12 集</span><span class="rate">★ 8.2</span></div></div>
                 <div class="prep">
@@ -195,8 +195,8 @@
 <section id="library" class="band">
   <div class="band-copy">
     <p class="kicker" data-reveal>媒体库</p>
-    <h2 data-reveal style="--i:1">动画、剧集、电影，<br>都整理得好好的。</h2>
-    <p data-reveal style="--i:2">每部作品都有背景图、艺术字标题、剧照和简介，资料来自 TMDB、Bangumi 和弹弹play。本地文件夹、SMB、WebDAV，以及组网里其他设备上的片子，都放进同一个媒体库。</p>
+    <h2 data-reveal style="--i:1">本地与远程片源，<br>统一媒体库管理。</h2>
+    <p data-reveal style="--i:2">支持动画、剧集与电影的自动刮削，从 TMDB、Bangumi 和弹弹play 获取简介、海报、背景图与标题 Logo。本机文件夹、SMB、WebDAV 以及组网内其他设备的媒体文件都会汇入同一个媒体库。</p>
   </div>
   <div class="marquee" data-reveal style="--i:3" aria-hidden="true">
     <div class="mq-row" style="--dur:70s">
@@ -230,8 +230,8 @@
 <section id="danmaku" class="split">
   <div class="split-copy">
     <p class="kicker" data-reveal>弹幕</p>
-    <h2 data-reveal style="--i:1">弹幕，<br>自动对上。</h2>
-    <p data-reveal style="--i:2">按文件匹配弹弹play 的弹幕，打开就有。进度条上的热度线标出最热闹的地方。</p>
+    <h2 data-reveal style="--i:1">按文件自动匹配<br>弹弹play 弹幕。</h2>
+    <p data-reveal style="--i:2">基于文件特征自动关联弹弹play 弹幕库，开播即加载；进度条附带弹幕密度曲线，方便快速定位高能片段。</p>
   </div>
   <div class="player" data-reveal style="--i:2">
     <img src="/next-assets/still-gakusei-5.webp" alt="">
@@ -250,17 +250,17 @@
   </div>
 </section>
 
-<!-- 设备：三步 -->
+<!-- 设备：四步 -->
 <section id="devices" class="steps" data-steps="4">
   <div class="stage">
     <div class="step-copy">
-      <p class="kicker">设备</p>
-      <h2 class="sec-h">所有设备，<br>一个媒体库。</h2>
+      <p class="kicker">多设备协同</p>
+      <h2 class="sec-h">跨设备组网，<br>共用同一个媒体库。</h2>
       <ol class="step-list">
-        <li data-s="0"><span class="num">01</span><h3>每台设备都是她的身体</h3><p>书房的电脑、柜子里的服务器、客厅的电视、手里的手机，登录同一个账号就连在一起。</p></li>
-        <li data-s="1"><span class="num">02</span><h3>在手机上说一句</h3><p>iPhone、iPad 和 Apple TV 不运行梨花，它们用组网里那台设备上的梨花。</p></li>
-        <li data-s="2"><span class="num">03</span><h3>客厅就开始放了</h3><p>片子放在哪台设备上都一样，媒体库只有一个。</p></li>
-        <li data-s="3"><span class="num">04</span><h3>活可以交给另一台</h3><p>每台能运行梨花的设备都有自己的梨花。书房电脑上的她，可以把下载交给服务器上的她，在那台机器上做完，再把结果告诉你。</p></li>
+        <li data-s="0"><span class="num">01</span><h3>同一账号自动组网</h3><p>台式机、NAS/服务器、电视和手机登录同一个账号后即可建立设备网络，共享媒体库状态。</p></li>
+        <li data-s="1"><span class="num">02</span><h3>移动端远程调用</h3><p>iPhone、iPad 和 Apple TV 端不直接运行 Agent，而是将指令转发给组网内已开启梨花的桌面端或服务器执行。</p></li>
+        <li data-s="2"><span class="num">03</span><h3>跨设备投播与读取</h3><p>无论文件实际存放在哪台机器上，媒体库视图完全一致，任意终端都可以直接发起播放。</p></li>
+        <li data-s="3"><span class="num">04</span><h3>任务自动分发执行</h3><p>多台设备上的梨花可以互相委派任务。例如在电脑上发起需求，由家里长期在线的服务器接管下载，完成后再回传通知。</p></li>
       </ol>
     </div>
     <div class="step-visual">
@@ -312,9 +312,9 @@
             </div></div>
           </div>
           <p class="tag t-tv" style="--i:0"><small>客厅</small><b>电视</b></p>
-          <p class="tag t-mac" style="--i:1"><small>书房</small><b>电脑<i class="dot"></i>梨花在这里</b></p>
-          <p class="tag t-srv" style="--i:2"><small>柜子里</small><b>服务器<span>片源和下载</span></b></p>
-          <p class="tag t-ph" style="--i:3"><small>手里</small><b>手机</b></p>
+          <p class="tag t-mac" style="--i:1"><small>书房</small><b>电脑<i class="dot"></i>运行 Agent</b></p>
+          <p class="tag t-srv" style="--i:2"><small>NAS / 服务器</small><b>节点<span>存储与下载</span></b></p>
+          <p class="tag t-ph" style="--i:3"><small>移动端</small><b>手机</b></p>
         </div>
       </div>
     </div>
@@ -324,10 +324,10 @@
 
 <section id="mesh-facts" aria-label="组网">
   <div class="facts">
-    <article data-reveal style="--i:0"><b>直连</b><p>同一账号的设备在局域网或你自己的网络（比如 Tailscale）里直接连接。</p></article>
-    <article data-reveal style="--i:1"><b>加密</b><p>每台设备有自己的证书，彼此认证后再说话，数据全程加密。</p></article>
-    <article data-reveal style="--i:2"><b>不经中转</b><p>我们的服务器只确认账号和设备，不转发你的片子和数据。</p></article>
-    <article data-reveal style="--i:3"><b>片子不搬家</b><p>文件留在原来那台设备上，播放时直接从那里读。</p></article>
+    <article data-reveal style="--i:0"><b>点对点直连</b><p>同一账号下的设备在局域网或自建虚拟局域网（如 Tailscale）内直接通信。</p></article>
+    <article data-reveal style="--i:1"><b>双向加密认证</b><p>每台设备持有独立证书，校验身份后建立加密传输通道。</p></article>
+    <article data-reveal style="--i:2"><b>不经中转服务器</b><p>官方服务端仅负责账号与设备发现，不中转你的媒体文件和通信数据。</p></article>
+    <article data-reveal style="--i:3"><b>文件原地读取</b><p>媒体文件保留在原设备磁盘上，播放时按需串流读取，无需重复拷贝。</p></article>
   </div>
 </section>
 
@@ -336,11 +336,11 @@
   <div class="stage">
     <div class="step-copy">
       <p class="kicker">架构</p>
-      <h2 class="sec-h">一层一层，<br>看她怎么工作。</h2>
+      <h2 class="sec-h">从能力接口到 Harness，<br>三层架构拆解。</h2>
       <ol class="step-list">
-        <li data-s="0"><span class="num">01</span><h3>能力层</h3><p>NipaPlay 的每个功能都注册为一项能力：播放、检索、下载、元数据、弹幕、设备管理，共 38 类 330 项。界面和智能体调用同一套能力，界面能做的，梨花都能做。</p></li>
-        <li data-s="1"><span class="num">02</span><h3>服务层</h3><p>能力由服务层执行：Erika 播放内核、媒体库、下载器、弹幕、字幕和组网。服务层不依赖智能体；任务在后台执行，关闭对话不会中断。</p></li>
-        <li data-s="2"><span class="num">03</span><h3>智能体与 Harness</h3><p>梨花运行在 DeepSeek Harness 上，也可换用 Codex，模型接入你自己的 API。她的指令、记忆、工具和钩子在最底层的 Harness 里，一个 Git 仓库。</p></li>
+        <li data-s="0"><span class="num">01</span><h3>能力层（Capabilities）</h3><p>NipaPlay 的所有功能都被抽象为标准化能力接口，涵盖播放、检索、下载、元数据、弹幕和设备管理，共 38 类 330 项。GUI 与 Agent 共用同一套能力注册表——界面支持的操作，梨花都可以通过接口调用。</p></li>
+        <li data-s="1"><span class="num">02</span><h3>服务层（Services）</h3><p>底层能力由核心服务模块驱动，包括 Erika 播放内核、媒体库、下载器、弹幕引擎、字幕和组网服务。服务层独立于 Agent 运行，后台下载或刮削任务不会因关闭对话窗口而中断。</p></li>
+        <li data-s="2"><span class="num">03</span><h3>智能体与 Harness</h3><p>梨花默认运行在 DeepSeek Harness 上，也支持切换至 Codex 或接入你自己的模型 API。她的提示词约束、记忆文件、自定义工具和事件钩子全部存放在最底层的 Git Harness 仓库中。</p></li>
       </ol>
     </div>
     <div class="step-visual">
@@ -373,18 +373,18 @@
   </div>
 </section>
 
-<!-- 她的家 -->
+<!-- Harness -->
 <section id="home" class="steps paper-steps" data-steps="4">
   <div class="stage">
     <i class="crop tl"></i><i class="crop tr"></i><i class="crop bl"></i><i class="crop br"></i>
     <div class="step-copy">
       <p class="kicker">Harness</p>
-      <h2 class="sec-h">她的家，<br>一个 Git 仓库。</h2>
+      <h2 class="sec-h">用 Git 仓库管理<br>Agent 的行为与记忆。</h2>
       <ol class="step-list">
-        <li data-s="0"><span class="num">01</span><h3>写给她的目标和规矩</h3><p>AGENTS.md 写着她是谁、为谁做事、什么算办好、什么必须先问你。每次开工，她先读这里。</p></li>
-        <li data-s="1"><span class="num">02</span><h3>她记下的事</h3><p>你的偏好、她学到的做法、某部作品的笔记，都在 memory/ 里，每条带日期和出处。用之前先核对现在的状态，密码和令牌不进记忆。</p></li>
-        <li data-s="2"><span class="num">03</span><h3>她自己写的工具</h3><p>tools/ 里是找资源、取弹幕、查接口的脚本，她可以改，也照着任务写新的；hooks/ 里的程序在下载完成、开始播放这些时刻自动运行。</p></li>
-        <li data-s="3"><span class="num">04</span><h3>每一次改动都有记录</h3><p>她的每次修改都是一次提交。改了什么、为什么改，你都看得到，不满意就撤回。</p></li>
+        <li data-s="0"><span class="num">01</span><h3>AGENTS.md：角色与行为边界</h3><p>定义梨花的工作职责、操作规范以及需要向用户二次确认的边界条件。每次执行任务前都会优先加载这份配置。</p></li>
+        <li data-s="1"><span class="num">02</span><h3>memory/：持久化记忆与偏好</h3><p>记录你的观影偏好、脚本调用经验以及单部作品的备注信息，每条记忆均附带日期与来源；使用前会核对当前状态，敏感凭据（如密码、Token）不会写入记忆。</p></li>
+        <li data-s="2"><span class="num">03</span><h3>tools/ 与 hooks/：可扩展脚本与钩子</h3><p>tools/ 存放用于搜刮资源、获取弹幕、查询接口的脚本，梨花可以根据实际需求修改或新建工具；hooks/ 中的脚本则会在开始播放、下载完成等生命周期事件触发时自动执行。</p></li>
+        <li data-s="3"><span class="num">04</span><h3>完整的 Git 版本历史</h3><p>梨花对配置、记忆和脚本的每一次改动都会生成一条 Git 提交记录。改了什么、为什么改全程可审计，不满意随时 revert。</p></li>
       </ol>
     </div>
     <div class="step-visual">
@@ -410,10 +410,10 @@
           </ul>
           <div class="panes">
             <div class="pane" data-s="0"><b class="cl h1"># NipaPlay Harness</b>
-<b class="cl">你是梨花，帮助一个具体的人使用 NipaPlay。</b>
-<b class="cl">NipaPlay 是你的身体：播放器、媒体库、弹幕、</b>
-<b class="cl">字幕和下载器承接你的工作；这个 harness</b>
-<b class="cl mark">是你的家，工具、经验和记忆由你维护。</b>
+<b class="cl">你是梨花，NipaPlay 的内置助手。</b>
+<b class="cl">NipaPlay 的播放内核、媒体库、弹幕、</b>
+<b class="cl">字幕与下载器通过能力接口供你调用；</b>
+<b class="cl mark">当前 Harness 仓库用于存放你的记忆、工具脚本与运行规则。</b>
 <b class="cl"> </b>
 <b class="cl h2">## 工作与授权</b>
 <b class="cl mark">- 用户说“找找看”是推荐，说“帮我下”才是执行。</b>
@@ -451,26 +451,26 @@
 <b class="cl"><i>b2105e9</i> 记下《学生会也有洞！》周六更新<em>11/06</em></b></div>
           </div>
         </div>
-        <p class="note n0">她每次开工先读这里</p>
-        <p class="note n1">她记的</p>
-        <p class="note n2">她写的</p>
-        <p class="note n3">不满意就撤回</p>
+        <p class="note n0">每次执行前读取</p>
+        <p class="note n1">偏好与笔记</p>
+        <p class="note n2">自动生成的脚本</p>
+        <p class="note n3">支持随时回滚</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- 开放 -->
+<!-- 开源与部署 -->
 <section id="open">
   <div class="open-head">
-    <p class="kicker" data-reveal>开放</p>
-    <h2 data-reveal style="--i:1">你的媒体库，你的模型。</h2>
+    <p class="kicker" data-reveal>开源与部署</p>
+    <h2 data-reveal style="--i:1">源码开放，模型与数据完全自控。</h2>
   </div>
   <div class="cards4">
-    <article data-reveal style="--i:1"><div class="vig vig-code"><p><i>$</i>git clone<br>github.com/AimesSoft/NipaPlay-Reload<u></u></p></div><b>开源</b><p>NipaPlay 和梨花用到的工具全部开源，代码在 GitHub 的 AimesSoft/NipaPlay-Reload。</p></article>
-    <article data-reveal style="--i:2"><div class="vig vig-form"><span><small>接口地址</small>https://api.example.com/v1</span><span><small>模型</small>你常用的模型</span><em><i></i>已连接</em></div><b>模型由你选择</b><p>填入自己的接口地址和密钥。官方服务、中转和自建的服务都可以。</p></article>
-    <article data-reveal style="--i:3"><div class="vig vig-devs"><span><i></i>书房 · 电脑<em>梨花</em></span><span><i></i>柜子里 · 服务器</span><span><i></i>手里 · 手机</span></div><b>数据在你的设备上</b><p>媒体库、梨花的记忆和设置都保存在本机，设备之间直接连接。</p></article>
-    <article data-reveal style="--i:4"><div class="vig vig-plat"><span>macOS</span><span>Windows</span><span>Linux</span><span>iPhone</span><span>iPad</span><span>Apple TV</span><span>服务器</span></div><b>全平台</b><p>macOS、Windows、Linux、iPhone、iPad、Apple TV，以及无界面的 Linux 服务器。</p></article>
+    <article data-reveal style="--i:1"><div class="vig vig-code"><p><i>$</i>git clone<br>github.com/AimesSoft/NipaPlay-Reload<u></u></p></div><b>开源</b><p>NipaPlay 客户端与梨花使用的 Harness 工具链全部开源，代码托管在 GitHub（AimesSoft/NipaPlay-Reload）。</p></article>
+    <article data-reveal style="--i:2"><div class="vig vig-form"><span><small>接口地址</small>https://api.example.com/v1</span><span><small>模型</small>你常用的模型</span><em><i></i>已连接</em></div><b>自定义模型</b><p>支持填写任意兼容格式的 API 地址与密钥，官方接口、第三方中转或本地自建模型服务均可接入。</p></article>
+    <article data-reveal style="--i:3"><div class="vig vig-devs"><span><i></i>桌面端 · 电脑<em>Agent</em></span><span><i></i>NAS / 服务器</span><span><i></i>移动端 · 手机</span></div><b>本地数据</b><p>媒体库索引、Agent 记忆与配置均保存在本地设备，设备间通过直连方式同步状态。</p></article>
+    <article data-reveal style="--i:4"><div class="vig vig-plat"><span>macOS</span><span>Windows</span><span>Linux</span><span>iPhone</span><span>iPad</span><span>Apple TV</span><span>服务器</span></div><b>全平台支持</b><p>支持 macOS、Windows、Linux、iPhone、iPad、Apple TV，以及无图形界面的 Linux 服务端。</p></article>
   </div>
 </section>
 
@@ -483,7 +483,7 @@
   </div>
   <div class="get-copy">
     <p class="kicker" data-reveal>下载</p>
-    <h2 data-reveal style="--i:1"><small>装上</small>NipaPlay <em>Next</em></h2>
+    <h2 data-reveal style="--i:1"><small>获取</small>NipaPlay <em>Next</em></h2>
     <p class="ver" data-reveal style="--i:2">2.0.0-alpha.5　开发者预览</p>
     <div class="cta" data-reveal style="--i:3">
       <a class="btn pink" href="https://github.com/AimesSoft/NipaPlay-Reload/releases/tag/v2.0.0-alpha.5">下载 Alpha 5</a>
